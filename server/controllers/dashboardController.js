@@ -1,20 +1,42 @@
 const Task = require("../models/Task")
+const Project = require("../models/Project")
 
 const getDashboardData = async (req, res) => {
   try {
-    const totalTasks = await Task.countDocuments()
+    const projects = await Project.find({
+      members: req.user.id,
+    })
+
+    const projectIds = projects.map(
+      (project) => project._id
+    )
+
+    const totalTasks = await Task.countDocuments({
+      projectId: {
+        $in: projectIds,
+      },
+    })
 
     const completedTasks = await Task.countDocuments({
+      projectId: {
+        $in: projectIds,
+      },
       status: "completed",
     })
 
     const pendingTasks = await Task.countDocuments({
+      projectId: {
+        $in: projectIds,
+      },
       status: {
         $ne: "completed",
       },
     })
 
     const overdueTasks = await Task.countDocuments({
+      projectId: {
+        $in: projectIds,
+      },
       dueDate: {
         $lt: new Date(),
       },
