@@ -1,6 +1,6 @@
 import { Navigate } from "react-router-dom"
 
-function ProtectedRoute({ children }) {
+function ProtectedRoutes({ children }) {
   const token = localStorage.getItem("token")
 
   if (!token) {
@@ -10,4 +10,4 @@ function ProtectedRoute({ children }) {
   return children
 }
 
-export default ProtectedRoute
+export default ProtectedRoutes
