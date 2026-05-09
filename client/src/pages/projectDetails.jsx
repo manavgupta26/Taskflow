@@ -14,7 +14,7 @@ const STATUS_COLUMNS = [
   { key: "completed",   label: "Completed" },
 ]
 
-function ProjectDetails() {
+function projectDetails() {
   const { id } = useParams()
   const [tasks, setTasks] = useState([])
   const [project, setProject] = useState(null)
@@ -358,4 +358,4 @@ function ProjectDetails() {
   )
 }
 
-export default ProjectDetails
+export default projectDetails

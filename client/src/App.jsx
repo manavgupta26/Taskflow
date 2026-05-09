@@ -4,7 +4,7 @@ import Login from "./pages/Login"
 import Signup from "./pages/Signup"
 import Dashboard from "./pages/Dashboard"
 import Projects from "./pages/Projects"
-import ProjectDetails from "./pages/ProjectDetails"
+import ProjectDetails from "./pages/projectDetails"
 import ProtectedRoute from "./components/ProtectedRoutes"
 
 function App() {
