@@ -1,4 +1,4 @@
-# Team Task Manager
+# TASKFLOW - Team Task Manager
 
 A full-stack task management web application where teams can create projects, assign tasks, track progress, and manage workflows with role-based access control.
 
@@ -62,3 +62,24 @@ A full-stack task management web application where teams can create projects, as
 ```bash
 client/
 server/
+
+Installation & Setup
+Clone Repository
+git clone YOUR_GITHUB_REPO_LINK
+Backend Setup
+cd server
+npm install
+npm run dev
+
+Backend runs on:
+
+http://localhost:8000
+
+Frontend Setup
+cd client
+npm install
+npm run dev
+
+Frontend runs on:
+
+http://localhost:5173
