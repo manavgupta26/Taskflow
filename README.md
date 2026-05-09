@@ -4,7 +4,7 @@ A full-stack task management web application where teams can create projects, as
 
 ---
 
-## Features
+# Features
 
 - User Authentication (Signup/Login)
 - JWT-based Authorization
@@ -18,32 +18,32 @@ A full-stack task management web application where teams can create projects, as
 
 ---
 
-## Roles
+# Roles
 
-### Admin
+## Admin
 - Create Projects
 - Add Members
 - Create Tasks
 - Delete Tasks
 - View All Project Tasks
 
-### Member
+## Member
 - View Assigned Projects
 - Update Task Status
 - Track Progress
 
 ---
 
-## Tech Stack
+# Tech Stack
 
-### Frontend
+## Frontend
 - React
 - Vite
 - Tailwind CSS
 - React Router DOM
 - Axios
 
-### Backend
+## Backend
 - Node.js
 - Express.js
 - MongoDB Atlas
@@ -51,35 +51,85 @@ A full-stack task management web application where teams can create projects, as
 - JWT Authentication
 - bcryptjs
 
-### Deployment
+## Deployment
 - Vercel (Frontend)
 - Railway (Backend)
 
 ---
 
-## Folder Structure
+# Folder Structure
 
 ```bash
 client/
 server/
+```
 
-Installation & Setup
-Clone Repository
+---
+
+# Installation & Setup
+
+## Clone Repository
+
+```bash
 git clone YOUR_GITHUB_REPO_LINK
-Backend Setup
+cd TASKFLOW
+```
+
+---
+
+# Backend Setup
+
+```bash
 cd server
 npm install
 npm run dev
+```
 
 Backend runs on:
 
+```bash
 http://localhost:8000
+```
 
-Frontend Setup
+---
+
+# Frontend Setup
+
+```bash
 cd client
 npm install
 npm run dev
+```
 
 Frontend runs on:
 
+```bash
 http://localhost:5173
+```
+
+---
+
+# Environment Variables
+
+Create a `.env` file inside the `server` folder and add:
+
+```env
+PORT=8000
+MONGO_URI=YOUR_MONGODB_CONNECTION_STRING
+JWT_SECRET=YOUR_SECRET_KEY
+```
+
+---
+
+# API Features
+
+- Authentication APIs
+- Project APIs
+- Task APIs
+- Dashboard APIs
+
+---
+
+# Author
+
+Manav Gupta
